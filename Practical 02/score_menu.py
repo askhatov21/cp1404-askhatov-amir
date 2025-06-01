@@ -50,6 +50,5 @@ def show_stars(score):
     """Prints the number of stars equal to the rating"""
     print("*" * score)
 
-
 main()
 
