@@ -34,9 +34,13 @@ for i, number in enumerate(numbers, 1):
 
 # TODO: Use f-string formatting to produce the output:
 # 1922 Gibson L-5 CES for about $16,036!
-print(f"{year} Gibson L-5 CES for about {cost}")
+output = f"{year} {name} for about ${cost:,}!"
+print(output)
 
 # TODO: Using a for loop with the range function and f-string formatting,
+for i in range(11):
+    result = 2 ** i
+    print(f'2 ^ {i} is {result}')
 # produce the following right-aligned output (DO NOT use a list):
 # 2 ^ 0 is    1
 # 2 ^ 1 is    2
