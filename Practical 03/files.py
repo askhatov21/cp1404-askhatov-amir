@@ -20,3 +20,13 @@ with open('numbers.txt', 'r') as file:
     second_number = int(file.readline().strip())
 
 print(f'The sum of the first two number is: {first_number + second_number}')
+
+
+#4.
+"""Reading whole numbers and count their sum"""
+total = 0
+with open("numbers.txt", "r") as file:
+    for line in file:
+        total+= int(line.strip())
+print(f'The total of all numbers is: {total}')
+
