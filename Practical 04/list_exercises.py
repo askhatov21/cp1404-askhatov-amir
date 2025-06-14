@@ -9,8 +9,8 @@ for i in range(5):
     numbers.append(number)
 
 
-    first_number = number[0]
-    last_number = number[-1]
+    first_number = numbers[0]
+    last_number = numbers[-1]
     smallest_number = min(numbers)
     largest_number = max(numbers)
     average_of_number = sum(numbers) / len(numbers)
@@ -23,8 +23,14 @@ for i in range(5):
     print(f"The largest number is {largest_number}")
     print(f"The average of the number is {average_of_number}")
 
-
-
+    usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye', 'swei45', 'BaseInterpreterInterface', 'BaseStdIn',
+             'Command',
+             'ExecState', 'InteractiveConsole', 'InterpreterInterface', 'StartServer', 'bob']
+    user_input = input("Usernames: ")
+    if user_input in usernames:
+        print("Access granted")
+    else:
+        print("Access denied")
 
 
 
