@@ -16,7 +16,12 @@ for i in range(5):
     average_of_number = sum(numbers) / len(numbers)
 
 
-
+    """Printing the results"""
+    print(f"The first number is {first_number }")
+    print(f"The last number is {last_number}")
+    print(f"The smallest number is {smallest_number}")
+    print(f"The largest number is {largest_number}")
+    print(f"The average of the number is {average_of_number}")
 
 
 
