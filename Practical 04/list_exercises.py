@@ -9,6 +9,11 @@ for i in range(5):
     numbers.append(number)
 
 
+    first_number = number[0]
+    last_number = number[-1]
+    smallest_number = min(numbers)
+    largest_number = max(numbers)
+    average_of_number = sum(numbers) / len(numbers)
 
 
 
