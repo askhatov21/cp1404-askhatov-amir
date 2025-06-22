@@ -30,3 +30,17 @@ def process_champions_data(champions_data):
         champions_dict[champion] = champions_dict.get(champion, 0) + 1
 
     return champions_dict, countries_set
+
+def display_results(champions_dict, countries_set):
+    """Display champions and countries."""
+    print("Wimbledon Champions:")
+    for champion, wins in champions_dict.items():
+        print(f"{champion:20} {wins}")
+
+    countries_list = sorted(countries_set)
+    print(f"\nThese {len(countries_list)} countries have won Wimbledon:")
+    print(", ".join(countries_list))
+
+
+if __name__ == "__main__":
+    main()
