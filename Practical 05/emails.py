@@ -1,5 +1,5 @@
 def main():
-    """"""
+    """Prompt user for email addresses and extract names."""
     email_to_name = {}
     email = input("Email: ").strip()
 
@@ -19,3 +19,9 @@ def main():
 
     if __name__ == '__main__':
         main()
+
+def get_name_from_email(email):
+    """Extract a name from an email address."""
+    username = email.split('@')[0]
+    parts = username.replace('.', ' ').split()
+    return ' '.join(parts).title()
