@@ -21,7 +21,7 @@ def main():
         main()
 
 def get_name_from_email(email):
-    """Extract a name from an email address."""
+    """Extract a name from an email address"""
     username = email.split('@')[0]
     parts = username.replace('.', ' ').split()
     return ' '.join(parts).title()
