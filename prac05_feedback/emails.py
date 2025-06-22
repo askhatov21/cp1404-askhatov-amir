@@ -17,11 +17,12 @@ def main():
         for email, name in email_to_name.items():
             print(f"{name} ({email})")
 
-    if __name__ == '__main__':
-        main()
 
 def get_name_from_email(email):
     """Extract a name from an email address"""
     username = email.split('@')[0]
     parts = username.replace('.', ' ').split()
     return ' '.join(parts).title()
+
+if __name__ == '__main__':
+    main()
