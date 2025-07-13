@@ -18,7 +18,8 @@ These practicals cover key programming concepts including clean code, object-ori
 ---
 
 ## Useful link
-Repository: https://github.com/askhatov21/cp1404-askhatov-amir/tree/prac_07_feedback
+My Practical 07 Repository: https://github.com/askhatov21/cp1404-askhatov-amir/tree/prac_07_feedback/Practical%2007
+CP1404 Practical Instructions: https://github.com/askhatov21/cp1404-askhatov-amir/tree/prac_07_feedback
 
 ---
 
