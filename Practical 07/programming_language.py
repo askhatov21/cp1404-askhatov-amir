@@ -16,8 +16,8 @@ class ProgrammingLanguage:
         self.pointer_arithmetic = pointer_arithmetic # New field
 
 
-    @property
-    def __repr__(self):
+
+    def __str__(self):
         """Return string representation of a ProgrammingLanguage."""
         return f"{self.name}, {self.typing} Typing, Reflection={self.reflection}, First appeared in {self.year}," \
     f"Pointer Arithmetic ={self.pointer_arithmetic}"
@@ -33,9 +33,9 @@ class ProgrammingLanguage:
 
 def run_tests():
     """Run simple tests/demos on ProgrammingLanguage class."""
-    ruby = ProgrammingLanguage("Ruby", "Dynamic", True, 1995)
-    python = ProgrammingLanguage("Python", "Dynamic", True, 1991)
-    visual_basic = ProgrammingLanguage("Visual Basic", "Static", False, 1991)
+    ruby = ProgrammingLanguage("Ruby", "Dynamic", True, 1995, False)
+    python = ProgrammingLanguage("Python", "Dynamic", True, 1991, False)
+    visual_basic = ProgrammingLanguage("Visual Basic", "Static", False, 1991, False)
     languages = [ruby, python, visual_basic]
     print(python)
 
