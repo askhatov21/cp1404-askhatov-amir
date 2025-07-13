@@ -15,13 +15,20 @@ class ProgrammingLanguage:
         self.year = year
         self.pointer_arithmetic = pointer_arithmetic # New field
 
+
+    @property
     def __repr__(self):
         """Return string representation of a ProgrammingLanguage."""
-        return f"{self.name}, {self.typing} Typing, Reflection={self.reflection}, First appeared in {self.year}"
+        return f"{self.name}, {self.typing} Typing, Reflection={self.reflection}, First appeared in {self.year}," \
+    f"Pointer Arithmetic ={self.pointer_arithmetic}"
+
+
 
     def is_dynamic(self):
         """Determine if language is dynamically typed."""
         return self.typing == "Dynamic"
+
+
 
 
 def run_tests():
@@ -29,8 +36,7 @@ def run_tests():
     ruby = ProgrammingLanguage("Ruby", "Dynamic", True, 1995)
     python = ProgrammingLanguage("Python", "Dynamic", True, 1991)
     visual_basic = ProgrammingLanguage("Visual Basic", "Static", False, 1991)
-    c = ProgrammingLanguage("C", "Static", False, 1972) #Added another language
-    languages = [ruby, python, visual_basic, c]
+    languages = [ruby, python, visual_basic]
     print(python)
 
     print("The dynamically typed languages are:")
