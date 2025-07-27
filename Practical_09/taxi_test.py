@@ -1,6 +1,6 @@
 from taxi import Taxi
 # Step 1: Create the taxi object
-my_taxi = Taxi("Prius 1", fuel=100, price_per_km=1.23)
+my_taxi = Taxi("Prius 1", fuel=100)
 
 # Step 2: Start a new fare Taxi object
 my_taxi.start_fare()
