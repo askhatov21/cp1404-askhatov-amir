@@ -2,6 +2,7 @@ from unreliable_car import UnreliableCar
 import random
 
 def test_unreliable_car():
+    """Test the functionality of the Unreliable Car"""
 
     random.seed(99) # for reproducibility
 
